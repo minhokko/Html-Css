@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gruping tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+        }
+        header{
+            background-color: aliceblue;
+            padding: 10px;
+            margin: 10px;
+        }
+        main{
+            background-color: aliceblue;
+            padding: 10px;
+            margin: 10px;
+        }
+        article{
+            background-color: darkgrey;
+            padding: 5px;
+        }
+        article > aside{
+            background-color: rgb(90, 87, 87);
+        }
+        nav{
+            background-color: rgb(85, 85, 85);
+            padding: 3px;
+            box-shadow:inset -2px -10px 4px 3px rgb(0 0 0 / 30%);
+            
+            
+        }
+        nav > a{
+            text-decoration: none;
+            color: aliceblue;
+            font-weight: bold;
+            margin-right: 60px;
+            
+           
+        }
+        nav > :hover{
+            text-decoration: underline;
+        }
+        footer{
+            background-color: black;
+            color: aliceblue;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+        }
+        footer > p{
+            margin: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+<p>Esportes Politica Tecnologia</p>
+        </section>
+        <section id="Noticias">
+            <article>
+                <h2>Sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, asperiores nam iusto enim illo
+                    voluptate quis, reiciendis magnam expedita accusamus vero veritatis modi error fugiat hic atque
+                    nulla totam sequi?</p>
+                <aside>
+                    <p>Artigo escrito pelo minhoco</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvimento pelo Minhoco</p>
+    </footer>
+</body>
+
+</html>

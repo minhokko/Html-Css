@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML 5</title>
+</head>
+
+<body>
+    <h1>IMAGEM DINAMICA</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu
+        navegador</p>
+    <picture>
+        <source media="(max-width: 750px )" srcset="imagem/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="imagem/foto-m.png" type="image/png">
+        <img src="imagem/foto-g.png" alt="imagem flexivel">
+    </picture>
+
+    <h1>Vamos aprender colocar audio</h1>
+    <audio src="midia/agora.mp3" controls autoplay></audio>
+    <!--Mp3 Wav ogg-->
+    <audio preload="metadata" controls autoplay>
+<source src="midia/chaves.mp3" type="audio/mpeg">
+<source src="midia/chaves.wav" type="audio/wav">
+<source src="midia/chaves.ogg" type="audio/ogg">
+    </audio>
+</body>
+
+</html>
